@@ -1,0 +1,220 @@
+/* Contact Enhanced's StyleSheet */
+@media print{.no-print,.no-print *{display:none !important}}
+
+/* ProgressBar styling */
+.ce-container .ui-accordion .ui-accordion-content{border:0;overflow:visible;padding:0}
+.ui-progressbar{position:relative}
+.progress-label{font-weight:700;left:0;position:absolute;text-align:center;text-shadow:1px 1px 0 #FFF;top:4px;width:100%}
+
+/* Pagination */
+.ce-pagination.ui-accordion .ui-accordion-content{background:transparent}
+.ce-pagination h3.ui-accordion-header{display:none}
+div.ceStepButtonContainer button{}
+div.ceStepButtons{clear:both;text-align:right}
+
+/* Bootstrap responsive */
+.ce-container .row-fluid [class*="span"],.ce-cf-container [class*="span"]{margin-left:0;margin-right:0}
+.contact-category table .visible-desktop{display:table-cell !important}
+.contact-category table {overflow-x:auto}
+
+/* Bootstrap override */
+.ce-cf-container .row-fluid label[class*="span"]{min-height:inherit}
+.row-fluid.row{margin-left:5px;margin-right:0}
+
+/* Contact detail */
+.field-label-address{float:left;position:absolute}
+.contact-contactinfo .field-entry { margin-top: 8px; }
+.contact-contactinfo address{margin-left:20px}
+.contact-position.ce-right-arrow:before{content:"\2192"} /* Arrow right */
+.jicons-icons i{min-width:16px}
+
+/* Contact Image */
+.contact-image.pull-left{margin-right:9px;float:left}
+.contact-image.pull-right{margin-left:5px;float:right}
+
+
+/* Map */
+.gm-style-iw div{overflow:hidden} /* Fix scrollbars*/
+.cemap_container{border:5px solid #EEE;background-color:#EEE;clear:both}
+.cemap_canvas{width:100%;height:350px}
+.cemap_canvas img{max-width:none !important} /* in order to fix incompatibilities with some templates */
+input.cemap_address{width:80%}
+.ce-map-infowindow span{display:block}
+#cemap_directions_container{display:none}
+.gmaps_travel_mode .btn{height:26px;width:50px}
+.gmaps_travel_mode .btn-driving img{background:no-repeat url('https://gbdfa.co.uk/components/com_contactenhanced/assets/images/gmaps/sprites.png') 0 0;width:15px;height:13px}
+.gmaps_travel_mode .btn-bicycling img{background:no-repeat url('https://gbdfa.co.uk/components/com_contactenhanced/assets/images/gmaps/sprites.png') 0 -47px;width:24px;height:21px}
+.gmaps_travel_mode .btn-walking img{background:no-repeat url('https://gbdfa.co.uk/components/com_contactenhanced/assets/images/gmaps/sprites.png') 0 -29px;width:11px;height:17px}
+.gmaps_travel_mode .btn-public-transit img{background:no-repeat url('https://gbdfa.co.uk/components/com_contactenhanced/assets/images/gmaps/sprites.png') 0 -13px;width:14px;height:17px}
+
+#ce-directionsPanel{background-color:#FFF}
+/* Coordinates*/
+.ce-map-coordinates{background-color:#EEE;padding:5px;clear:both}
+.ce-map-coordinates span{font-size:85% !important}
+.ce-map-coord-label{font-weight:bolder}
+.ce-map-coord-value{}
+/* MAP:End*/
+
+/* FORM container*/
+#ce-form-container{width:99%}
+.ce-modal-container{margin:10px}
+.ce-contact-modal{margin-bottom:50px}
+.ce-cf-container .row-fluid [class*="span"]{margin:0}
+
+/* FORM:Custom Fields */
+.ce-cf-container{margin:0 0 9px 0}
+/* .ce-cf-container .inputbox{width:95%} */
+
+/* Custom Fields specific */
+.limit_char{font-size:85%}
+.cf-type-numberrange select{width:initial}
+
+/* Multiple Files */
+.cf-type-multiplefiles li button{float:right}
+
+.ce-radiobox-container,.ce-checkbox-container{overflow:hidden;width:100%}
+.ce-container input[type="checkbox"],
+.ce-container input[type="radio"]{margin-right:3px}
+.ce-radiobox-container label,
+.ce-checkbox-container label{cursor:pointer;display:inline}
+.cf-input-checkbox:focus{border:none} /* In order to fix problem with checkbox in IE9 */
+.checkbox-subtitle{clear:both}
+
+/* Date Form Fields */
+.cf-type-date input.required{background-image:url("https://gbdfa.co.uk/components/com_contactenhanced/assets/images/calendar-required.png") !important;background-position:right top !important;}
+.cf-type-date input{cursor:pointer;background-image:url("../images/calendar.png") !important;background-position:98% 2px !important;background-repeat:no-repeat !important}
+.cf-type-date .date-range-selected > .ui-state-active,.cf-type-date .date-range-selected > .ui-state-default{background:none;background-color:lightsteelblue}
+
+/* SQL Form Field */
+@media (max-width: 767px) {
+	.cf-type-sql [class*="span"]{display: block !important;float:none !important;width:100% !important}
+}
+/* Width, compatible with old versions */
+.ce-fltwidth-100,.ce-fltwidth-99{width:99%}
+.ce-fltwidth-75,.ce-fltwidth-74{width:74.5%}
+.ce-fltwidth-66{width:66%}
+.ce-fltwidth-50{width:49.5%}
+.ce-fltwidth-33{width:33%}
+.ce-fltwidth-25{width:24.5%}
+.ce-fltwidth-20{width:19.8%}
+.ce-fltwidth-15{width:14.9%}
+
+/* Float Right to left specific configuration */
+div.ce-fltrtl{}
+div.ce-fltltr [class*="ce-fltwidth"]{float:right}
+div.ce-fltrtl div.multiupload{float:right !important}
+
+/* Left to right*/
+div.ce-fltltr{}
+div.ce-fltltr [class*="ce-fltwidth"]{float:left}
+
+/* Required fields + Validation options */
+.ce-cf-container .inputbox.required{
+background-image:url(../images/required_bg.gif);
+background-repeat:no-repeat;
+background-position:top right}
+.ce-cf-container input.ce-validation-error,.ce-cf-container textarea.ce-validation-error{border-color:#b12}
+label.requiredField{font-weight:bold}
+.ce-cf-container label.ce-validation-error{padding-bottom:5px;font-weight:bold;color:#b12;display:none}
+
+/* Display Labels on top of the field */
+label.cf-label{display:block}
+/* Add labels to the left instead of on top */
+/* label.cf-label{float:left;width:90px} */
+
+.disabled_field{background-color:#f5f5f5}
+.cf-type-username input.success,.cf-type-email input.success,.captcha-container input.success{border-color:#0F0 !important}
+
+/* Tooltip */
+.ce-cf-container .hasTip label{}
+.ce-cf-container .hasTip img{cursor:help}
+
+/* required sign*/
+small.requiredsign span,span.requiredsign{color:#b12}
+
+/* Contact:Extra Field */
+.ce-contact-ef label{display:block;float:left;font-weight:bolder;width:150px}
+.ce-contact-ef{padding:0 0 10px 0}
+
+/* Sidebar */
+.contact-sidebar{clear:right}
+
+/* Button */
+.ce-button-container{display:block}
+.contact .button,
+.contact button,
+.contact button.ce-button-submit,
+.contact button.ce-button-reset,
+.contact button{cursor:pointer;display:inline}
+
+/* Captcha  .captcha-container, */
+#dynamic_recaptcha_1,.ce-module .securimage-label,#idealCaptcha{display:block;clear:both;width:100%}
+
+/* Email Copy  */
+.ce-contact-email-copy-container{display:block;clear:both;width:99%}
+
+/* Message box */
+div.ce-message-container{display:block;clear:both}
+div.ce-message-container div{font-weight:bold;padding:5px 0 5px 0}
+
+.ce-text-marker{width:90px;font-weight:bold;display:inline-block}
+
+.ce-print-icon-container{float:right}
+
+/* Category View:image*/
+.ce-contact-img-cat{border:1px solid #CCC;margin-right:5px;padding:3px;width:48px}
+
+img.ce-category-country-flag{height:100%;max-height:36px}
+
+label.ce-level-1{margin-left:15px}
+label.ce-level-2{margin-left:30px}
+input.ce-level-3{margin-left:60px}
+
+.ce-loading{height:30px;background:url("../images/loading-white.gif") no-repeat center center}
+.ce-tooltip{padding-left:5px;margin-top:-5px;}
+
+
+/* QR Code */
+.ce-qrcode-container{float:right;clear:both}
+.ce-qrcode{}
+.ce-qrcode img{}
+
+/* HTML Template:Thank you page */
+span.ce-cf-html-label{font-weight:bold;display:block;padding-top:8px}
+span.ce-cf-html-field{}
+
+/* Search */
+.ce-search-category{margin-bottom:20px}
+.ce-search-category-item{border-bottom:1px solid #CCC;padding-bottom:5px}
+.ce-search-category-item h3{display:block}
+.ce-search-category-item h3 a{text-decoration:none}
+.ce-search-category-item .item-address{font-size:95%}
+.ce-search-category-item .ce-contact-img-cat{float:right;width:130px}
+
+/* category-module */
+.category-module .contact-image img{width:100px;padding:5px}
+.category-module .contact-image{float:right}
+.category-module .contact-address span{display:inline}
+.category-module .contact-contactinfo span{display:inline;padding-right:5px}
+.category-module ul li{clear:both}
+
+.loading-chainselect{background:url("../images/loading-white.gif") no-repeat center right}
+
+/* Thumbnail Category */
+#ce-thumbnails .row-fluid [class*="span"]:first-child,
+#ce-thumbnails .row-fluid [class*="span"]{margin-left:0%}
+.ce-thumbnail{padding:10px;overflow:hidden}
+
+/* Blog/Extended Contact Category */
+.contactenhanced-category .list-title{margin-bottom:4px}
+.list-striped{list-style:none;line-height:18px;text-align:left;vertical-align:middle;border-top:1px solid #ddd;margin-left:0}
+.list-striped li:hover{background-color:#f5f5f5}
+.list-striped li:nth-child(odd){background-color:#f9f9f9}
+@media only screen and (max-device-width: 480px) {
+	.ce-category-blog .contact-image,.ce-category-blog .contact-image img{width:95%;text-align:center}	
+}
+
+/* Module specific */
+.ce-module .ce-cf-container  .inputbox{width:94%}
+
+#idealCaptcha,.captcha-container{clear:both}
