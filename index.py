@@ -2,7 +2,7 @@ import os
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
 # ===== CONFIG =====
-ROOT_DIR = "paystub/"   # change if needed
+ROOT_DIR = "receipt/"   # change if needed
 OLD = b"bank-bank-statement.html"
 NEW = b"business-bank-statement.html"
 EXTENSIONS = {".html"}                             # limit to these extensions
